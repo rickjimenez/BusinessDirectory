@@ -5,18 +5,13 @@
     "module": "esnext",
     "baseUrl": "./src",
     "paths": {
-      "@animations/*": ["animations/*"],
-      "@classes/*": ["classes/*"],
-      "@api/*": ["api/*"],
-      "@store/*": ["store/*"],
+      "@customTypes/*": ["types/*"],
+      "@styles/*": ["styles/*"],
+      "@services/*": ["services/*"],
       "@components/*": ["components/*"],
-      "@assets/*": ["assets/*"],
-      "@common/*": ["common/*"],
-      "@constants/*": ["constants/*"],
-      "@helpers/*": ["helpers/*"],
+      "@navigations/*": ["navigations/*"],
       "@screens/*": ["screens/*"],
-      "@hooks/*": ["hooks/*"],
-      "@i18n/*": ["i18n/*"]
+      "@hooks/*": ["hooks/*"]
     }
   }
 }

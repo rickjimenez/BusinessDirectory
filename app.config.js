@@ -1,4 +1,4 @@
-const myValue = 'Business Directory';
+const myValue = 'Businesses Directory';
 
 export default {
   name: myValue,

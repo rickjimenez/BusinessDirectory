@@ -21,6 +21,7 @@
     "expo": "~44.0.0",
     "expo-constants": "~13.0.1",
     "expo-status-bar": "~1.2.0",
+    "phone-formatter": "0.0.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
@@ -29,14 +30,17 @@
     "react-native-safe-area-context": "3.3.2",
     "react-native-screens": "~3.10.1",
     "react-native-svg": "^12.1.1",
+    "react-native-toast-message": "2.1.1",
     "react-native-web": "0.17.1",
     "react-query": "^3.34.16"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@types/phone-formatter": "^0.0.2",
     "@types/react": "~17.0.21",
     "@types/react-native": "~0.64.12",
     "prettier": "2.5.1",
+    "reactotron-react-native": "^5.0.1",
     "typescript": "~4.3.5"
   },
   "private": true

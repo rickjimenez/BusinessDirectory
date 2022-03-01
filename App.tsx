@@ -1,27 +1,21 @@
 import React from 'react';
+import { useColorScheme } from 'react-native';
 import * as eva from '@eva-design/eva';
 import { AppearanceProvider } from 'react-native-appearance';
-import { ApplicationProvider, Layout, Text, IconRegistry, Icon, Button } from '@ui-kitten/components';
+import { ApplicationProvider, IconRegistry } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import Toast from 'react-native-toast-message';
+import { AppNavigator } from '@navigations/navigation';
+
+if (__DEV__) {
+  import('./ReactotronConfig').then(() => console.log('Reactotron Configured'));
+}
 
 const queryClient = new QueryClient();
 
-import { Pressable, StyleSheet, useColorScheme, View } from 'react-native';
-
-import { getBusiness, saveBusiness } from './src/services/bussiness';
-import { Business } from './src/screens/Business';
-import { AppNavigator } from './src/navigations/navigation';
-
 const App: React.FC = () => {
   const scheme = useColorScheme();
-
-  const getData = async () => {
-    const result = await getBusiness();
-    console.log('res', result);
-  };
-
-  const FacebookIcon = (props: any) => <Icon name="facebook" {...props} />;
 
   return (
     <>
@@ -33,17 +27,9 @@ const App: React.FC = () => {
           </ApplicationProvider>
         </QueryClientProvider>
       </AppearanceProvider>
+      <Toast />
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 export default App;
